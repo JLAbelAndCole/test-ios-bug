@@ -1,0 +1,17 @@
+@use '../../../styles/breakpoints' as *;
+
+.desktop {
+	display: none;
+
+	@include min-tablet {
+		display: block;
+	}
+}
+
+.mobile {
+	display: block;
+
+	@include min-tablet {
+		display: none;
+	}
+}

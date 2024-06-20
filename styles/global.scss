@@ -1,0 +1,20 @@
+@use '@/styles/normalize' as *;
+@use '@/styles/theme' as *;
+@use '@/styles/breakpoints' as *;
+
+html {
+	font-size: 16px;
+}
+
+/**
+ * We can use this global style to set our container max-width
+ */
+.containerMaxWidth {
+	max-width: $container-max-width;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}

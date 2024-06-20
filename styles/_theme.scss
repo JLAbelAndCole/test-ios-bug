@@ -1,0 +1,75 @@
+/** Core Colours **/
+$black: #000;
+$white: #fff;
+$charcoal: #3c3c3b;
+$tangerine: #ff913d;
+$sunshine: #fdc500;
+$soft-gray: #e5e2e7;
+$pea-green: #00964f;
+$jade-green: #27ad7a;
+$forest-green: #007f68;
+$aubergine: #6a0f5a;
+$blush: #eb608a;
+$warm-spice: #dd685b;
+$capsicum: #e52330;
+$duck-egg: #6ab5c0;
+
+/** Charcoal tints **/
+$charcoal-90: #50504f;
+$charcoal-80: #636362;
+$charcoal-70: #777776;
+$charcoal-60: #8a8a89;
+$charcoal-50: #9e9e9d;
+$charcoal-40: #b1b1b1;
+$charcoal-30: #c5c5c5;
+$charcoal-20: #d8d8d8;
+$charcoal-10: #ececec;
+$charcoal-5: #f5f5f5;
+
+/** Digital Only **/
+$pea-green-30: #32ac73;
+$accept-bg: #98d0b7;
+$accept-bg-30: #e0f0e9;
+$denied-bg: #fae8ea;
+$primary-cta-active: #e68237;
+$primary-cta-hover: #f8a261;
+$tinted-yellow: #fee280;
+
+/** Legacy Colours (Romanesco **/
+$light-grey: #eee !default;
+$cream-grey: #ecece9;
+$dark-grey: #888;
+$dark-olive: #6b7b6e;
+$olive: #708e40;
+$dark-red: #e85d4a;
+
+/** Website max width **/
+$container-max-width: 1200px;
+
+/**
+* @TODO Any colours below need to be updated to the new colour palette above
+**/
+
+/************  CTA Colours  ************/
+$colour-cta-button: #f07e26; // Tangerine
+$colour-cta-button-hover: #f39851;
+$colour-cta-button-border-bottom: #f39851;
+$colour-cta-button-text: #3c3b3c;
+$colour-cta-button-secondary: #6a0e5a; // Aubergine
+$color-cta-button-inactive: #aaa; // Light grey
+
+/************  Header Colours  ************/
+$colour-header-background: #fdc500; // Yellow
+
+/************  Menu Colours  ************/
+$colour-menu-background: #fdf9ea; // Pale yellow
+$color-sub-menu-item: #e5e5e5;
+$color-footer-background: $charcoal-5;
+$color-menu-burger: $charcoal-80;
+
+/************  Font Colours  ************/
+$colour-main-font: #3c3c3b;
+$colour-error-message: #e85d4a;
+$colour-success-message: #00964f;
+$colour-heading-link-font: #708e40;
+$colour-website-main-font: #232323;

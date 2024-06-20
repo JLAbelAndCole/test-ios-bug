@@ -1,0 +1,117 @@
+@use '../../../styles/theme' as *;
+@use '../../../styles/font-styles' as *;
+@use '../../../styles/mixins' as *;
+
+.link {
+	color: $colour-main-font;
+	font-weight: $montserrat-semibold-font;
+	text-decoration: none;
+	border: none;
+
+	&.small {
+		height: 32px;
+		min-width: 88px;
+		padding: 0 16px;
+
+		@include font-size(14);
+	}
+
+	&.medium {
+		height: 40px;
+		min-width: 104px;
+		padding: 0 24px;
+
+		@include font-size(14);
+	}
+
+	&.large {
+		height: 48px;
+		min-width: 192px;
+		padding: 0 32px;
+
+		@include font-size(16);
+	}
+
+	&.extraWidth {
+		text-decoration: none;
+		width: 100%;
+		max-width: 288px;
+		height: 48px;
+		padding: 0 32px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include font-size(14);
+	}
+
+	&.primaryTangerine {
+		background-color: $tangerine;
+
+		&:hover {
+			background-color: $primary-cta-hover;
+		}
+
+		&:active {
+			background-color: $primary-cta-active;
+		}
+
+		&:disabled {
+			background-color: $charcoal-10;
+			color: $charcoal-40;
+		}
+	}
+
+	&.primaryWhite {
+		background-color: $white;
+
+		&:hover {
+			background-color: $charcoal-5;
+		}
+
+		&:active {
+			background-color: $soft-gray;
+		}
+
+		&:disabled {
+			background-color: $charcoal-10;
+			color: $charcoal-40;
+		}
+	}
+
+	&.secondary {
+		background: none;
+		border: 1px solid $charcoal;
+
+		&:hover {
+			border: 1px solid $soft-gray;
+		}
+
+		&:active {
+			background-color: $soft-gray;
+			border: none;
+		}
+
+		&:disabled {
+			border: 1px solid $charcoal-30;
+			color: $charcoal-40;
+		}
+	}
+
+	&.anchorTangerine {
+		color: $colour-cta-button;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&.anchorCharcoal {
+		text-align: left;
+		color: $charcoal;
+
+		&:hover {
+			border-bottom: 2px solid $charcoal;
+		}
+	}
+}

@@ -1,0 +1,55 @@
+@use 'sass:map';
+
+$base-font-size: 16;
+
+@mixin font-size($size) {
+	font-size: ($size / $base-font-size) * 1rem;
+}
+
+@mixin line-height($spacing) {
+	line-height: ($spacing / $base-font-size) * 1rem;
+}
+
+@mixin letter-spacing($spacingInPixels, $spacingInEm) {
+	letter-spacing: ($spacingInPixels / $base-font-size) * 1rem;
+	letter-spacing: $spacingInEm * 1em;
+}
+
+@mixin button-reset {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+$z-index-levels: (
+	'modal': 1000,
+	'mobile-menu': 500,
+	'overlay': 400,
+	'header': 99,
+	'above-base': 10,
+	'base': 1,
+	'below': -1,
+);
+
+@mixin apply-z-index($key: 'base') {
+	$value: map.get($z-index-levels, $key);
+
+	@if $value {
+		z-index: $value;
+	} @else {
+		@warn "No z-index found for '#{$key}'.";
+	}
+}
+
+@mixin hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
